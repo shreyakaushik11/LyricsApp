@@ -1,16 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+        <div class="toolbar-title toolbar-title-ios">Lyrics</div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
- <p> Enter artist's name: </p>
+  <div class="align">
+ Enter artist's name:
  <input type="text" [(ngModel)]="artist">
- <p> Enter name of song: </p>
+ </div>
+ <div class="align">
+ Enter name of song:
  <input type="text" [(ngModel)]="title">
-<button (click)="getLyrics()">Get Lyrics</button>
-<p>{{lyrics}}</p>
+ </div>
+ <div class="align">
+ <button ion-button round (click)="getLyrics()" >
+   Get Lyrics
+ </button>
+ </div>
+ <span style="white-space: pre-line">{{lyrics}}</span>
+
 </ion-content>
