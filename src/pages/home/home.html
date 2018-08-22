@@ -7,13 +7,14 @@
 </ion-header>
 
 <ion-content padding>
+  
   <div class="align">
- Enter artist's name:
- <input type="text" [(ngModel)]="artist">
+
+ <input type="text" [(ngModel)]="artist" placeholder=" Enter artist's name" class="align">
  </div>
  <div class="align">
- Enter name of song:
- <input type="text" [(ngModel)]="title">
+
+ <input type="text" [(ngModel)]="title" placeholder=" Enter name of song" class="align">
  </div>
  <div class="align">
  <button ion-button round (click)="getLyrics()" >
