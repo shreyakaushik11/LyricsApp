@@ -10,17 +10,17 @@
   
   <div class="align">
 
- <input type="text" [(ngModel)]="artist" placeholder=" Enter artist's name" class="align">
+ <input type="text" [(ngModel)]="artist" placeholder=" Enter artist's name" class="align" id="ip2">
  </div>
  <div class="align">
 
- <input type="text" [(ngModel)]="title" placeholder=" Enter name of song" class="align">
+ <input type="text" [(ngModel)]="title" placeholder=" Enter name of song" class="align" id="ip2">
  </div>
  <div class="align">
  <button ion-button round (click)="getLyrics()" >
    Get Lyrics
  </button>
  </div>
- <span style="white-space: pre-line">{{lyrics}}</span>
-
+ <div class="font"> {{title}} by {{artist}} </div>
+ <div style="white-space: pre-line" class="lyrics">{{lyrics}}</div>
 </ion-content>

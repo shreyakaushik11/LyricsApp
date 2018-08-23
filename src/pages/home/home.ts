@@ -22,8 +22,8 @@ export class HomePage {
       console.log(data);
     }, err => {
       console.log(err);
-      
+     
     });
-  
+    
   }
 }
